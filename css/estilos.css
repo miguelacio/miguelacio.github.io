@@ -1,0 +1,127 @@
+body
+{
+	border: 1px;
+	margin: auto auto;
+	display: inline-block;
+	max-width: 1024px;
+}
+header h1
+{
+	margin: 0px 0px 0px 15px;
+}
+header nav ul li
+{
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	/*width: 89px;*/
+}
+
+footer
+{
+	background: gray;
+	color: white;
+}
+
+#cajaPW img
+{
+	width: 80%;
+}
+
+#cajaCurriculum
+{
+	display: none;
+	font-size: 1.5em;
+}
+#cajaPW
+{
+	margin: 0 auto;
+	display: none;
+
+}
+#cajaMagic
+{
+	display: none;
+}
+
+#cajaExamenes
+{
+	display: none;
+}
+#cajaProyectos
+{
+	display: none;
+}
+#yo
+{
+	float: right;
+	margin-top: 0px;
+	width: 200px;
+}
+#menuPrincipal
+{
+	display: none;
+}
+#menuPW
+{
+	display: none;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 640px){
+	body
+	{	
+		width: 100%;
+		font-size: 1.5em;
+	}
+	header
+	{
+		font-size: 0.5em;
+		width: 100%;
+	}
+	
+	section article
+	{
+		display: block;
+		width: 100%;
+	}
+	header nav
+	{
+		display: none;
+	}
+	#menuPrincipal
+	{
+		font-size: 2em;
+		display: block;
+		width: 100%;
+	}
+	#menuPW
+	{
+		font-size: 2em;
+		display: block;
+		width: 100%;
+	}
+	#btnPracticas
+	{
+		display: none;
+	}
+	#btnExamenes
+	{
+	 	display: none;
+	}
+
+
+}

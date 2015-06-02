@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio de proyectos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="js/eventos.js"></script>
+</head>
+<body id="body">
+  <header>
+    <div class="page-header">
+      <h1>
+        Portafolio de proyectos y CV
+      </h1>
+      <h2>
+        Por Jesus Miguel Flores
+      </h2>      
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <button id="btnInicio" class="btn btn-default">
+            <span class="glyphicon glyphicon-home" ></span>  Inicio
+          </button>
+        </li>
+        <li>
+          <button id="btnCurriculum" class="btn btn-success">
+            <span class="glyphicon glyphicon-user" ></span>  Currículum Vitae
+          </button>
+        </li>
+        <li>
+          <button id="btnPW" class="btn btn-danger">
+            <span class="glyphicon glyphicon-list-alt" ></span>  Programación Web
+          </button>
+        </li>
+        <li>
+          <button id="btnMagic" class="btn btn-info">
+            <span class="glyphicon glyphicon-eye-open" ></span>  Click aquí
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <select name="menuPrincipal" id="menuPrincipal" onchange="inicioApp()">
+      <option value="btnInicio">Selecciona lo que quieres ver</option>
+      <option value="btnCurriculum">Curriculum vitae</option>
+      <option value="btnPW">Programacion web</option>
+      <option value="btnMagic">Selecciona esta opcion para algo inesperado</option>
+    </select>
+  <section >
+    <article id="cajaCurriculum">
+
+     <div class="panel panel-success">
+      <div class="panel-heading">Curriculum Vitae</div>
+        <div class="panel-body">
+          <img id="yo" src="img/yo.jpg" alt="">
+          FLORES ROCHA Jesús Miguel <br>
+           16 de Febero de 1994(21 años)<br>
+           Culiacán Sinaloa México <br>
+           Tel: (667) 308 6762 <br>
+           Email: miguelfloresroch@gmail.com <br>
+           <br>
+          <b>Estudios</b> <br>
+         2000-2006: Primaria en Gral. de Div. Manuel Ávila Camacho <br>
+         2006-2009: Secundaria en Escuela Secundaria Tecnica #1 <br>
+         2009-2012: Bachillerato en Centro de Bachilleres Tecnicos e industrial #224 <br>
+         2012-presente: Ingienería en Tecnologías de Informacion y Comunicaciones(TICs) en el Instituto Tecnológico de Culiacán(¿o tal vez Instituto Nacional de México?) <br>
+         <br>
+        <b>Idiomas:</b> <br>
+        Español 100% <br>
+        Inglés 90% <br>
+        <br>
+
+        <i><b>Lenguajes manejados</b> </i> <br>
+        <table class="table" style="width:20%">
+          <tr>
+            <td>Java</td>
+            <td>90%</td> 
+         </tr>
+         <tr>
+            <td>c++</td>
+            <td>80%</td> 
+         </tr>
+         <tr>
+            <td>c#</td>
+            <td>90%</td> 
+         </tr>
+          <tr>
+            <td>HTML</td>
+            <td>90%*</td> 
+         </tr>
+        </table>
+        <small>* agradecimientos especiales al profesor Martín Neravez</small>
+
+
+        </div>
+    </div>
+    </article>
+    <article id="cajaPW">
+          <button id="btnPracticas" class="btn btn-primary">
+            <span class="glyphicon glyphicon-send" ></span>  Practicas
+          </button>
+       
+          <button id="btnExamenes" class="btn btn-warning">
+            <span class="glyphicon glyphicon-warning-sign" ></span>  Examenes
+          </button>
+          <select name="menuPW" id="menuPW" onchange="inicioApp()">
+                <option value="">Selecciona una opcion</option>
+               <option value="btnExamenes">Examenes</option>
+               <option value="btnPracticas">Practicas</option>
+          </select>
+
+          <article id="cajaProyectos">
+            <section>
+
+              <article>
+                <h3>Examen Segundo Parcial</h3>
+                <i>Utilizando HTML5 y CSS3</i> <br>
+            <img  id="examen1" src="img/examen1.png" alt="">
+              </article>
+              <article>
+                 <h3>Examen Tercer Parcial</h3>
+                <i>Combinando tecnologías. HTML5, CSS3, JQuery, PHP y una base de datos.</i> <br>
+                <img src="img/examen2.png" alt="">
+                <img src="img/examen21.png" alt="">
+              </article>
+            </section>
+          </article>
+          <article id="cajaExamenes">
+          <section>
+            <article>
+                <h3>Practica 1</h3>
+                <i>Utilizando tecnología HTML5</i> <br>
+                 <img src="img/html1.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 2</h3>
+                <i>Utilizando HTML5 y etiquetas LINK</i> <br>
+                 <img src="img/html2.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 3</h3>
+                <i>Introduccion a los formularios usando HTML5</i> <br>
+                 <img src="img/html3.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 4</h3>
+                <i>Utilizando tablas e inserción de imagenes en HTML5</i> <br>
+                 <img src="img/html4.png" alt="">
+              </article>
+                <article>
+                <h3>Practica 5</h3>
+                <i>Utilizando formulacios HTML5 como un curriculum vitae </i> <br>
+                 <img src="img/html6.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 6</h3>
+                <i>Introduccion a Javascript</i> <br>
+                 <img src="img/js1.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 7</h3>
+                <i>Utilizando HTML5 y CSS3</i> <br>
+                 <img src="img/js2.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 8</h3>
+                <i>Utilizando Javascript para hacer funcionar una calculadora</i> <br>
+                 <img src="img/js3.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 9</h3>
+                <i>Utilizando HTML5 y CSS3</i> <br>
+                 <img src="img/practica1.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 10</h3>
+                <i>Utilizando HTML5 y CSS3</i><br>
+                <img src="img/practica2.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 11</h3>
+                <i>Utilizando HTML5 y CSS3</i><br>
+                 <img src="img/practica3.png" alt="">
+              </article>
+              <article>
+                <h3>Practica 12</h3>
+                <i>Combinando tecnologías. HTML5, CSS3, JQuery, PHP y una base de datos.</i><br>
+                <img src="img/practica4.png" alt="">
+                <img src="img/practica41.png" alt="">
+              </article>
+            </section>  
+          </article>
+    </article>
+    <article id="cajaMagic">
+      <div class="panel panel-info">
+      <div class="panel-heading">Este es el botón mágico</div>
+        <div class="panel-body">
+          <h2> Students on summer vacations be like:</h2> <br>
+          <video src="video/ultron.mp4" autoplay loop>
+          
+          </video>
+        </div>
+    </div>   
+    </article>
+  </section>
+  <a href="#" class="back-to-top">Back to Top</a>
+  <footer>
+    Derechos reservados PW 10AM
+  </footer>
+</body>
+</html>
+
+
